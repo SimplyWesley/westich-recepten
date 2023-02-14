@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Intro */
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: row;
+  padding: 20px;
+}
+
+.titel h1 {
+  font-size: 350%;
+  text-align: center;
+  /* border-bottom: 3px black solid; */
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title p {
+  width: 89%;
+  text-align: center;
+}
+
+.foto,
+.fotoo {
+  min-width: 30%;
+}
+
+.text,
+.text2 {
+  padding: 20px;
+  color: black;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
+}
+
+.recipe-div {
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  height: 300px;
+  overflow: hidden;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.recipe-div h3 {
+  text-transform: capitalize;
+}
+
+.section {
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  width: 89%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding-top: 15px;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: inset 0 0 0 2000px rgba(129, 129, 129, 0.5);
+  background-image: url("https://media.istockphoto.com/id/1307964333/vector/kitchenware-vector-pattern.jpg?s=612x612&w=0&k=20&c=tyDNGwCSzJEzHRa_F0-6ANDfMJcUi2YkYCQXMPBxKQA=");
+}
+
+.recepth1 {
+  color: white;
+  position: relative;
+}
+
+.recepth3 {
+  border-radius: 20px;
+  text-align: left;
+  color: white;
+}
+
+.recipe-div:hover {
+  box-shadow: inset 0 0 0 2000px rgba(129, 129, 129, 0.253);
+  position: relative;
+  z-index: 100;
+  transform: scale(1.15);
+}
+
+.backgroundoverlay {
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(129, 129, 129, 0.5);
+}
+
+.wrapper {
+  padding: 3px;
+  position: relative;
+  text-align: right;
+  /* background: rgba(122, 49, 232, 0.74); */
+  border-radius: 3px;
+  color: white;
+}
+
+.onsrecept-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+  width: 89%;
+}
+
+.onsrecept-container img {
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 2000px rgba(129, 129, 129, 0.5);
+}
+
+.onsrecept-container p {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.searchbar-input {
+  width: 26%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  width: 2.66666666666%;
+  padding: 10px;
+  font-size: 16px;
+  min-width: 50px;
+}
+
+#addbtn a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 1309px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .onsrecept-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .onsrecept-container img {
+    width: 100%;
+  }
+
+  .recipes {
+    flex-direction: column;
+  }
+  .recipe-div { 
+    width: 94%;
+    background-position: center;
+  }
+}

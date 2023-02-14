@@ -1,0 +1,120 @@
+/* Navbar */
+nav {
+    height: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 2000px rgba(129, 129, 129, 0.5);
+    background-image: url("https://media.istockphoto.com/id/1307964333/vector/kitchenware-vector-pattern.jpg?s=612x612&w=0&k=20&c=tyDNGwCSzJEzHRa_F0-6ANDfMJcUi2YkYCQXMPBxKQA=");
+}
+
+nav a {
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+.logo {
+    padding: 10px;
+    width: auto;
+    float: left;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+.logotext {
+    padding: 10px;
+    width: auto;
+    float: left;
+}
+
+.logotext a {
+    color: white;
+    font-size: 22px;
+    float: left;
+    margin-top: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.list-item {
+    float: right;
+    margin-right: 25px;
+    margin-top: 17px;
+    list-style: none;
+}
+
+.list-item li {
+    float: left;
+    padding: 13px 13px;
+    font-size: 18px;
+}
+
+.list-item li a {
+    color: white;
+}
+
+.list-item li a:hover {
+    color: #03fcb1;
+    transition: all .3s ease-in-out;
+}
+
+.icon {
+    display: none;
+}
+
+.toggle {
+    float: right;
+    margin: 20px;
+    color: #EEE;
+    font-size: 30px;
+    border: 1px solid #EEE;
+    padding: 0px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 1309px) {
+    .icon {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
+
+    .list-item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        display: none;
+        background-color: white;
+    }
+
+    .list-item a{
+        color: black!important;
+    }    
+    .list-item li {
+        text-align: right;
+        display: block;
+        float: none;
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 2000px rgba(129, 129, 129, 0.5);
+    background-image: url("https://media.istockphoto.com/id/1307964333/vector/kitchenware-vector-pattern.jpg?s=612x612&w=0&k=20&c=tyDNGwCSzJEzHRa_F0-6ANDfMJcUi2YkYCQXMPBxKQA=");
+}
+
+.footer-text a {
+    color: white;
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+.footer-text a:hover {
+    color: #03fcb1;
+    transition: all .3s ease-in-out;
+}
