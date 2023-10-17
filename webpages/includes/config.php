@@ -2,8 +2,8 @@
 
 $host = 'localhost';
 $dbname = 'recipes';
-$username = 'root';
-$password = '';
+$username = '<your username>';
+$password = '<your password>';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

@@ -2,8 +2,8 @@
 
 $host = 'localhost';
 $dbname = 'login-systeem';
-$username = 'root';
-$password = '';
+$username = '<your username>';
+$password = '<your password>';
 
 
 $dbh = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
