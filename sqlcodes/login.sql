@@ -1,10 +1,6 @@
 -- Login database creation
 
-DROP DATABASE IF EXISTS `login-systeem`;
-
-CREATE DATABASE `login-systeem`;
-
-USE `login-systeem`;
+USE `recipes`;
 
 DROP TABLE IF EXISTS `login`;
 
