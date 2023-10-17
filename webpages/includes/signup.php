@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 include("config.php");
 
 $user = $_POST["user"];
@@ -11,8 +9,8 @@ $sql = "INSERT INTO `login`(`Username`, `Password`) VALUES (:user, :pass)";
 
 function search($user)
 {
-    global $dbh;
-    $stmt = $dbh->prepare("SELECT * FROM `login` WHERE username = :user");
+    global $conn;
+    $stmt = $conn->prepare("SELECT * FROM `login` WHERE username = :user");
     $stmt->execute(
         [
             ":user" => $user
@@ -31,7 +29,7 @@ function search($user)
 $check = search($user);
 
 if ($check == false) {
-    $st = $dbh->prepare($sql);
+    $st = $conn->prepare($sql);
     $st->execute([
         ':user' => $user,
         ':pass' => $pass

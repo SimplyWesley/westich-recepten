@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 include("config.php");
 
 $user = $_POST["user"];
@@ -9,7 +7,7 @@ $pass = $_POST["password"];
 
 $sql = "SELECT * FROM `login` WHERE username = :user AND password = :password";
 
-$st = $dbh->prepare($sql);
+$st = $conn->prepare($sql);
 
 $st->execute([
     ':user' => $user,
